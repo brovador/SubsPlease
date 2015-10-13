@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Subs, please</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-material-design/dist/css/roboto.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-material-design/dist/css/material.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-material-design/dist/css/ripples.min.css">
+  </head>
+  <body>
+    
+    <h2>Subs, please</h2>
+
+    <div id="languageSelector" class="btn-group language-selector">
+    </div>
+
+    <div id="container" class="table-wrapper">
+    </div>
+
+    <footer>made with ♥ by <a href="javascript:openLink('https://github.com/brovador')">@brovador</href></footer>
+    <script>
+      window.jQuery = window.$ = require('./bower_components/jquery/dist/jquery')
+      $(function(){
+        $.material.init()
+
+        function disableDrag(event){
+          event.preventDefault()
+        }
+
+        $('body')
+        .on('dragenter', disableDrag)
+        .on('dragover', disableDrag)
+        .on('dragleave', disableDrag)
+        .on('drop', disableDrag)
+      })
+    </script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+    <script src="bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+    <script src="js/dst/app.js"></script>
+
+
+  </body>
+</html>
