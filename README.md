@@ -6,8 +6,7 @@ Use drag and drop to add the video files, the subtitles will be searched based o
 
 ## Screens
 
-![Screen1](http://brovador.github.io/SubsPlease/screenshot1.png)
-![Screen2](http://brovador.github.io/SubsPlease/screenshot2.png)
+![Screen1](http://brovador.github.io/SubsPlease/screenshot2.png)
 
 ## Build
 
