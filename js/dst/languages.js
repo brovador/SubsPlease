@@ -1,7 +1,7 @@
 'use strict';
 
 var languages = {
-  'order': ['es', 'en', 'it'],
+  'order': ['es', 'en', 'it', 'fr', 'pt'],
   'info': {
     'es': { 'name': 'Spanish', 'code': 'spa' },
     'en': { 'name': 'English', 'code': 'eng' },
