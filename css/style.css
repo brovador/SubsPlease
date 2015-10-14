@@ -1,6 +1,5 @@
 html, body {
-  width: 500px;
-  height: 400px;
+  height: 100%;
   padding: 0px;
   margin: 0px;
   overflow: hidden;
@@ -35,60 +34,47 @@ h2 {
   right: 0px;
 }
 
+
 .table-wrapper {
+  height: 100%;
   position: relative;
-  width: 100%;
   margin: auto;
 }
 
 .table-scroll {
-  height: 270px;
+  height: 100%;
   overflow: auto;
+  padding-bottom: 100px;
 }
 
 table.files thead {
-  position: absolute;
   background-color: #eee;
   z-index: 1;
 }
 
-table.files tbody {
-  margin-top: 36px;
-  display: block;
-}
-
-table.files th, table.files td {
-  display: inline-block;
-  overflow: hidden;
-}
-
-table.files th {
-  padding-left: 0px;
-  padding-right: 0px;
+table.files tr.empty {
+  width
 }
 
 table.files tr.empty {
   width: 100% !important;
   text-align: center;
-  height: 150px;
-  display: block;
   background-color: transparent !important;
 }
 
-table.files tr.empty td {
-  padding-top: 80px;
+table.files tr.empty i {
+  padding-top: 20px;
 }
 
 table.files th:nth-child(1),
 table.files td:nth-child(1) {
-  width: 400px;
+  width: 80%;
 }
 
 table.files th:nth-child(2),
 table.files td:nth-child(2) {
-  width: 100px;
+  width: 20%;
   text-align: center;
-
 }
 
 .spin {
@@ -106,8 +92,13 @@ table.files td:nth-child(2) {
 }
 
 footer {
+  position: absolute;
+  bottom: 0px;
   border-top: 2px solid #ddd;
   padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   font-size: 0.8em;
+  width: 100%;
+  background-color: #eee;
 }

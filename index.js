@@ -24,8 +24,10 @@ app.on('ready', function() {
   mainWindow = new BrowserWindow({
     width: 500,
     height: 400,
+    'min-width' : 500,
+    'min-height' : 400,
     center: true,
-    resizable: false,
+    //resizable: false,
     title: 'Subs, please',
     'title-bar-style': 'hidden'
   });
