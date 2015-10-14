@@ -11,9 +11,12 @@ Use drag and drop to add the video files, the subtitles will be searched based o
 
 ## Build
 
-* '''npm install'''
-* '''bower install'''
-* build for the desired platform using '''electron-packager'''
+```
+npm install
+bower install
+```
+
+Then use [electron-packager](https://github.com/maxogden/electron-packager) and build for your platform.
 
 ## TODO
 * Automated build process
