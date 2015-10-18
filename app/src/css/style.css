@@ -1,0 +1,104 @@
+html, body {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  -webkit-user-select: none;
+  cursor: default;
+}
+
+.dragOver {
+  background-color: #CCCCCC !important;
+  border-radius: 10px;
+}
+
+.dragOver table.files tr {
+  background-color: transparent !important;
+}
+
+
+h2 {
+  padding: 20px 20px 0px;
+  font-weight: bold;
+}
+
+.btn-group.language-selector {
+  width: 100px;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+}
+
+.dropdown-menu.languages-menu {
+  left: auto;
+  right: 0px;
+}
+
+
+.table-wrapper {
+  height: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.table-scroll {
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 100px;
+}
+
+table.files thead {
+  background-color: #eee;
+  z-index: 1;
+}
+
+table.files tr.empty {
+  width
+}
+
+table.files tr.empty {
+  width: 100% !important;
+  text-align: center;
+  background-color: transparent !important;
+}
+
+table.files tr.empty i {
+  padding-top: 20px;
+}
+
+table.files th:nth-child(1),
+table.files td:nth-child(1) {
+  width: 80%;
+}
+
+table.files th:nth-child(2),
+table.files td:nth-child(2) {
+  width: 20%;
+  text-align: center;
+}
+
+.spin {
+  transition-property: transform;
+  transition-duration: 1s;
+  animation-name: rotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  border-top: 2px solid #ddd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 0.8em;
+  width: 100%;
+  background-color: #eee;
+}

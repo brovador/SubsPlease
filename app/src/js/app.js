@@ -3,8 +3,8 @@
   var React = require('react')
     , ReactDOM = require('react-dom')
     , subtitler = require('subtitler')
-    , languages = require('./js/dst/languages')
-    , preferencesLoader = require('./js/dst/preferences-loader')
+    , languages = require('./js/languages')
+    , preferencesLoader = require('./js/preferences-loader')
 
   var preferences = preferencesLoader.preferences
 
