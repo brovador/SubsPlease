@@ -7,9 +7,11 @@ module.exports = function(grunt) {
       copy: {
         main: {
           files: [
+            { src : 'app/src/package.json', dest : 'app/dist/package.json' },
             { src : 'app/src/index.js', dest : 'app/dist/index.js' },
             { src : 'app/src/index.html', dest : 'app/dist/index.html' },
-            { src : 'app/src/css/style.css', dest : 'app/dist/css/style.css' },
+            { src : 'app/src/css/*.css', dest : 'app/dist/css', expand : true, flatten : true },
+            { src : 'app/src/js/*.js', dest : 'app/dist/js', expand : true, flatten : true },
             {
               src: [
                 'bower_components/bootstrap/dist/css/*.min.css',
@@ -28,6 +30,14 @@ module.exports = function(grunt) {
               dest: 'app/dist/js',
               expand: true,
               flatten: true,
+            },
+            {
+              src : [
+                'bower_components/bootstrap-material-design/dist/fonts/*.*'
+              ],
+              dest : 'app/dist/fonts',
+              expand : true,
+              flatten : true,
             }
           ]
         }
@@ -49,6 +59,11 @@ module.exports = function(grunt) {
           options: { spawns : false }
         }
       },
+      shell: {
+        npm: {
+          command: 'cd app/dist && npm install'
+        }
+      },
       electron: {
         osxBuild: {
           options: {
@@ -56,9 +71,9 @@ module.exports = function(grunt) {
             dir: './app/dist',
             out: './build',
             version: '0.33.7',
-            platform: 'dawrin',
+            platform: 'darwin',
             arch: 'x64',
-            // prune: true,
+            prune: true,
           }
         }
       }
@@ -67,12 +82,14 @@ module.exports = function(grunt) {
 
   grunt.registerTask('serve', [
     'copy',
+    'shell:npm',
     'babel:dist',
     'watch',
   ])
 
   grunt.registerTask('build', [
     'copy',
+    'shell:npm',
     'babel:dist',
     'electron',
   ])
