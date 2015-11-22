@@ -65,15 +65,17 @@ module.exports = function(grunt) {
         }
       },
       electron: {
-        osxBuild: {
+        all: {
           options: {
             name: 'SubsPlease',
             dir: './app/dist',
             out: './build',
             version: '0.33.7',
-            platform: 'darwin',
-            arch: 'x64',
+            platform: 'all',
+            arch: 'all',
+            icon: './icon/Icon',
             prune: true,
+            overwrite: true,
           }
         }
       }

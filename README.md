@@ -16,7 +16,10 @@ Use drag and drop to add the video files, the subtitles will be searched based o
 ```
 npm install
 bower install
+grunt build
 ```
+
+Use ```grunt watch``` for development
 
 Then use [electron-packager](https://github.com/maxogden/electron-packager) and build for your platform.
 
