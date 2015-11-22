@@ -5,7 +5,8 @@ Simple GUI to download subtitles from [opensubtitles](http://www.opensubtitles.o
 Use drag and drop to add the video files, the subtitles will be searched based on their title and selected language. Subtitles will be placed on the same dir than the video with the same name and '.srt' extension.
 
 ## Binaries
-[TODO]
+* 1.0.0
+  * [MacOSX](http://brovador.github.io/SubsPlease/builds/1.0.0/SubsPlease-MacOSX-1.0.0.zip)
 
 ## Screens
 
