@@ -7,6 +7,7 @@ Use drag and drop to add the video files, the subtitles will be searched based o
 ## Binaries
 * 1.0.0
   * [MacOSX](http://brovador.github.io/SubsPlease/builds/1.0.0/SubsPlease-MacOSX-1.0.0.zip)
+  * Windows [32-bit](http://brovador.github.io/SubsPlease/builds/1.0.0/SubsPlease-win32-ia32.zip) [64-bit] (http://brovador.github.io/SubsPlease/builds/1.0.0/SubsPlease-win32-x64.zip)
 
 ## Screens
 
