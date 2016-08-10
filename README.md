@@ -4,10 +4,23 @@ Simple GUI to download subtitles from [opensubtitles](http://www.opensubtitles.o
 
 Use drag and drop to add the video files, the subtitles will be searched based on their title and selected language. Subtitles will be placed on the same dir than the video with the same name and '.srt' extension.
 
+## Changelog
+
+# 1.0.1
+Updated with latest npm packages for electron, babel and subtitler
+
+# 1.0
+First release
+
+
 ## Binaries
+* 1.0.1
+  * [MacOSX](http://brovador.github.io/SubsPlease/builds/1.0.1/SubsPlease-darwin-x64.zip)
+  * Windows [32-bit](http://brovador.github.io/SubsPlease/builds/1.0.1/SubsPlease-win32-ia32.zip) [64-bit] (http://brovador.github.io/SubsPlease/builds/1.0.1/SubsPlease-win32-x64.zip)
 * 1.0.0
   * [MacOSX](http://brovador.github.io/SubsPlease/builds/1.0.0/SubsPlease-MacOSX-1.0.0.zip)
   * Windows [32-bit](http://brovador.github.io/SubsPlease/builds/1.0.0/SubsPlease-win32-ia32.zip) [64-bit] (http://brovador.github.io/SubsPlease/builds/1.0.0/SubsPlease-win32-x64.zip)
+
 
 ## Screens
 
