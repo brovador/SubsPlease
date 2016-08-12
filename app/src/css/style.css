@@ -1,4 +1,5 @@
 html, body {
+  -webkit-app-region: drag;
   height: 100%;
   padding: 0px;
   margin: 0px;

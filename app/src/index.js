@@ -1,48 +1,35 @@
-var app = require('app');  // Module to control application life.
-var BrowserWindow = require('browser-window');  // Module to create native browser window.
+const {app, BrowserWindow} = require('electron')
 
-// Report crashes to our server.
-require('crash-reporter').start();
+let win
 
-// Keep a global reference of the window object, if you don't, the window will
-// be closed automatically when the JavaScript object is garbage collected.
-var mainWindow = null;
-
-// Quit when all windows are closed.
-app.on('window-all-closed', function() {
-  // On OS X it is common for applications and their menu bar
-  // to stay active until the user quits explicitly with Cmd + Q
-  // if (process.platform != 'darwin') {
-  app.quit();
-  //}
-});
-
-// This method will be called when Electron has finished
-// initialization and is ready to create browser windows.
-app.on('ready', function() {
-  // Create the browser window.
-  mainWindow = new BrowserWindow({
+function createWindow() {
+  win = new BrowserWindow({
     width: 500,
     height: 400,
-    'min-width' : 500,
-    'min-height' : 400,
+    minWidth : 500,
+    minHeight : 400,
     center: true,
-    //resizable: false,
     title: 'Subs, please',
-    'title-bar-style': 'hidden'
+    titleBarStyle: 'hidden',
+    backgroundColor: '#EEE',
+  })
+  
+  win.loadURL('file://' + __dirname + '/index.html');
+  win.on('closed', function() {
+    win = null
   });
+}
 
-  // and load the index.html of the app.
-  mainWindow.loadUrl('file://' + __dirname + '/index.html');
+app.on('ready', createWindow)
 
-  // Open the DevTools.
-  // mainWindow.openDevTools();
+app.on('window-all-closed', function() {
+  if (process.platform !== 'darwin') {
+    app.quit()
+  }
+})
 
-  // Emitted when the window is closed.
-  mainWindow.on('closed', function() {
-    // Dereference the window object, usually you would store windows
-    // in an array if your app supports multi windows, this is the time
-    // when you should delete the corresponding element.
-    mainWindow = null
-  });
-});
+app.on('activate', () => {
+  if (win === null) {
+    createWindow()
+  }
+})

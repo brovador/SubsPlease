@@ -1,6 +1,5 @@
 var fs = require('fs')
-  , remote = require('remote')
-  , app = remote.require('app')
+  , app = require('electron').remote.app
   , preferencesPath = app.getPath('userData') + '/preferences.json'
   , preferences = null
 
