@@ -17,10 +17,6 @@ First release
 * 1.0.1
   * [MacOSX](http://brovador.github.io/SubsPlease/builds/1.0.1/SubsPlease-darwin-x64.zip)
   * Windows [32-bit](http://brovador.github.io/SubsPlease/builds/1.0.1/SubsPlease-win32-ia32.zip) [64-bit] (http://brovador.github.io/SubsPlease/builds/1.0.1/SubsPlease-win32-x64.zip)
-* 1.0.0
-  * [MacOSX](http://brovador.github.io/SubsPlease/builds/1.0.0/SubsPlease-MacOSX-1.0.0.zip)
-  * Windows [32-bit](http://brovador.github.io/SubsPlease/builds/1.0.0/SubsPlease-win32-ia32.zip) [64-bit] (http://brovador.github.io/SubsPlease/builds/1.0.0/SubsPlease-win32-x64.zip)
-
 
 ## Screens
 
